@@ -69,6 +69,7 @@ nav .menu span {
     width: 100%;
     background-color: white;
     border-radius: 0.2rem;
+    margin: 0.2rem;
 
 }
 
@@ -112,7 +113,6 @@ nav .menu span {
     background-position:top;
     min-height: 100vh;
 
-    height: 100vw;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -132,7 +132,7 @@ nav .menu span {
 .home-biography {
     font-size: 1.5rem;
     opacity: 0;
-    animation: fade-in 1.5s ease-in-out 3s forwards;
+    animation: fade-in 1.5s ease-in-out 1.5s forwards;
     text-align: center;
     color: aquamarine;
 }
@@ -171,6 +171,13 @@ nav .menu span {
 }
 
 @media (max-width: 720px) {
+    .home-biography{
+        color: rgb(128, 255, 223);
+    }
+    .home-buttons {
+        font-size: 1rem;
+        padding: 1rem;
+    }
     .home-container {
         background-size: contain;
         background-position: center;

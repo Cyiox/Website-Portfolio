@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Navigate, NavLink, useNavigate } from "react-router-dom";
 import Footer from "../Footer";
 function Home() {
     useEffect(() => {
@@ -29,15 +29,15 @@ function Home() {
                 <button className="home-buttons" onClick={handleButtonClick1}>Linkedin ⤴  </button>
                 </a>    
                 <a href="mailto:jameergomezsantos@gmail.com">
-                <button className="home-buttons" >Contact me! ✉️</button>
+                <button className="home-buttons" >Contact ✉️</button>
                 </a>
-                <button className="home-buttons" onClick={() => Navigate("/Photography")}>View Photography  📷</button>
+                <button className="home-buttons" onClick={() => Navigate("/Photography")}>Photography 📷</button>
             </div>
             <h2 className="home-titletext">About me</h2>
             <p className="home-subtext">Currently, I am a junior at Brandeis University studying computer science and am located in Cambridge, MA. My interestest in learning how
                 <br />to program started when I was a kid playing Roblox, i was facinated by each game I played and would go on to try to make serveral of my own.
                 <br />
-                <br />Nowadays I have used technologys such as:
+                <br />Nowadays I have used technologies such as:
             </p>
             <ul className="home-techstack">
                 <li>Java</li>
@@ -48,7 +48,7 @@ function Home() {
                 <li>Lua</li>
                 <li>C++</li>
             </ul>
-            <p className="home-subtext">In order to create all sorts of cool and different <a href="/Coding">projects!</a></p>
+            <p className="home-subtext">In order to create all sorts of cool and different <NavLink to={"/Coding"}>projects!</NavLink></p>
             <h2 className="home-titletext">My Experiences</h2>
             <Footer />
         </div>
