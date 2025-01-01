@@ -4,6 +4,11 @@ html, body {
     padding: 0;
 }
 
+.app{
+    height: 100%;
+    width: 100%;
+}
+
 .active{
     background-color: #32101e ;
 }
@@ -16,6 +21,7 @@ nav{
     margin: 0;
     padding: 0;
     position: sticky;
+    z-index: 10; /* Ensure it appears above other content */
     top: 0;
 
 
@@ -48,17 +54,69 @@ nav ul li a:not(.active):hover {
     background-color: #401427;
 }
 
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    width: 2.75rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.2rem;
+
+}
+
+
+@media (max-width: 480px) {
+    nav .menu {
+        display: flex;
+    }
+    nav {
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    } 
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a {
+        margin: 0.2rem, 0.5rem;
+    }
+}
+
 .home-container {
     margin: 0;
     padding: 0;
-    position: absolute;
     background-image: url('/cool-background.svg');
     background-size:cover;
     background-color: rgb(133, 119, 178);
     background-repeat: no-repeat;
     background-position:top;
+    min-height: 100vh;
+
     height: 100vw;
-    width: 100vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: rgb(0, 0, 0); /* Adjust text color for readability */
 }
 .home-titletext {
@@ -111,6 +169,22 @@ nav ul li a:not(.active):hover {
     list-style:none;
     display: inline;
 }
+
+@media (max-width: 720px) {
+    .home-container {
+        background-size: contain;
+        background-position: center;
+    }
+    .home-titletext {
+        padding-top: 5rem;
+        font-size: 1.5rem;
+    }
+    .home-biography {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
+
 /* Bounce animation */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
