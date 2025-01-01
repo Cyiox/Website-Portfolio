@@ -107,7 +107,7 @@ nav .menu span {
     padding: 0;
     background-image: url('/cool-background.svg');
     background-size:cover;
-    background-color: rgb(133, 119, 178);
+    background-color: #8577b2;
     background-repeat: no-repeat;
     background-position:top;
     min-height: 100vh;
@@ -174,7 +174,8 @@ nav .menu span {
     .home-container {
         background-size: contain;
         background-position: center;
-    }
+        background: rgb(133,119,178);
+        background: linear-gradient(347deg, rgba(133,119,178,1) 15%, rgba(133,119,178,1) 32%, rgba(116,136,185,1) 59%, rgba(45,208,215,1) 87%, rgba(1,252,234,1) 100%);;    }
     .home-titletext {
         padding-top: 5rem;
         font-size: 1.5rem;
