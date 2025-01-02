@@ -157,6 +157,9 @@ nav .menu span {
     border-radius: .5rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.home-buttons:hover {
+    background-color: #401427;
+}
 .home-subtext {
     text-align: center;
     color: white;
@@ -242,4 +245,60 @@ nav .menu span {
 .Footer {
     padding-top: 10rem;
     text-align: center;
+}
+
+
+.tab-container {
+    width: 100%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.tab-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tab {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #5b233a;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #401427;
+}
+
+.tab.active {
+    background-color: #ffff;
+    color: black;
+    font-weight: bold;
+}
+
+.tab-content {
+    padding: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    border: 0px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #9977b2;
+    text-align: center;
+}
+.tab-content ul{
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+}
+.tab-content li{
+    margin-bottom: 0.5rem;
 }

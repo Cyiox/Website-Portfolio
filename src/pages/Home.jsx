@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Navigate, NavLink, useNavigate } from "react-router-dom";
 import Footer from "../Footer";
+import TabMenu from "../TabMenu";
 function Home() {
     useEffect(() => {
         document.title = "Jameer's Website";
@@ -50,6 +51,7 @@ function Home() {
             </ul>
             <p className="home-subtext">In order to create all sorts of cool and different <NavLink to={"/Coding"}>projects!</NavLink></p>
             <h2 className="home-titletext">My Experiences</h2>
+            <TabMenu />
             <Footer />
         </div>
     );
