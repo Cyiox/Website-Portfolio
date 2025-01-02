@@ -142,6 +142,7 @@ nav .menu span {
 .home-buttons-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem   ;
 }
 .home-buttons {
@@ -162,12 +163,28 @@ nav .menu span {
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-.home-techstack{
-    text-align: center;
-    color:white;
-    list-style:none;
-    display: inline;
+.home-techstack {
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically if in a flex container */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    margin: 0 auto; /* Center the list container within its parent */
+    padding: 0; /* Remove default padding */
+    color: white; /* Set text color */
+    list-style: none; /* Remove bullet points */
+    max-width: 90%; /* Ensure consistent centering by limiting width */
+    gap: 1rem; /* Add spacing between items */
+    text-align: center; /* Center the text inside each item */
 }
+
+.home-techstack li {
+    padding: 0.5rem 1rem; /* Add spacing inside each item */
+    background-color: #5b233a; /* Optional: Set a background color for items */
+    border-radius: 0.5rem; /* Optional: Add rounded corners */
+    flex: 0 1 auto; /* Allow items to grow/shrink naturally */
+    text-align: center; /* Center text inside list items */
+}
+
 
 @media (max-width: 720px) {
     .home-biography{
