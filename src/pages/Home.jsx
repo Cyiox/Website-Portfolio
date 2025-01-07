@@ -50,6 +50,9 @@ function Home() {
                 <li>C++</li>
             </ul>
             <p className="home-subtext">In order to create all sorts of cool and different <NavLink to={"/Coding"}>projects!</NavLink></p>
+            <div className="image">
+            <img src="/IMG_3182.JPG" alt="Me in Puerto Rico" className="home-graduation-image" />
+            </div>
             <h2 className="home-titletext">My Experiences</h2>
             <TabMenu />
             <Footer />
