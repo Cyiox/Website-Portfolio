@@ -27,11 +27,11 @@ class Example extends Phaser.Scene {
     
    preload() {
     //this.load.image('izaiah', ) //Add iziah to the game
-    this.load.image('pickle', '/src/assets/pickle.png')
-    this.load.image('bg', '/src/assets/citybackground.jpg')
-    this.load.image('ground','/src/assets/platform.png')
-    this.load.image('jameer', '/src/assets/jameerhead.png')
-    this.load.image('wedge','/src/assets/wedgehead.png')
+    this.load.image('pickle', '/assets/pickle.png')
+    this.load.image('bg', '/assets/citybackground.jpg')
+    this.load.image('ground','/assets/platform.png')
+    this.load.image('jameer', '/assets/jameerhead.png')
+    this.load.image('wedge','/assets/wedgehead.png')
   }
 
   create() {
