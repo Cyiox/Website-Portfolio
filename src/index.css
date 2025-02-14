@@ -338,3 +338,42 @@ nav .menu span {
     font-weight: bold;
     color: rgb(255, 255, 255);
 }
+.gameContainer {
+    background-color: #9977b2;
+    width: 100vw;  /* Full width */
+    height: 100vh; /* Full height */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gameTitle{
+    color: #32101e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+.gameCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust based on your layout needs */
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 1000;
+  }
+  .popup button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
