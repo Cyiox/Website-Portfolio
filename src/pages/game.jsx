@@ -148,7 +148,7 @@ class Example extends Phaser.Scene {
   return (
     <div className="home-container">
       <h1 className="gameTitle">Happy Valentines day!!!!</h1>
-      <h2 className="gameTitle">Collect the pickes and bring them to you</h2>
+      <h2 className="gameTitle">Collect the pickles and bring them to you</h2>
       <h3 className="gameTitle">Because you love pickles lol</h3>
       <div className="gameCenter">
         <GameComponent config={config} />
