@@ -1,10 +1,11 @@
-import { Link, NavLink } from "react-router-dom"
+import {Link, NavLink, useLocation} from "react-router-dom"
 import { useState } from 'react'
 
 function NavBar(){
 
 
     const [menuOpen, setMenuOpen] = useState(false)
+
 
 
     return(
