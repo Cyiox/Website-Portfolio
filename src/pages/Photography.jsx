@@ -13,9 +13,20 @@ const images = [
 
 function Photography(){
     useEffect(() => {
+        const ogBackgroundColor = document.body.style.backgroundColor;
+        const ogMargin = document.body.style.margin;
+        const ogPadding = document.body.style.padding;
+
         document.body.style.backgroundColor = 'rgb(226,155,99)';
-        document.body.margin = "0";
-        document.body.padding = "0";
+        document.body.style.margin = "0";
+        document.body.style.padding = "0";
+
+        // Things will return this state when a user leaves this page
+        return () => {
+            document.body.style.backgroundColor = ogBackgroundColor;
+            document.body.style.margin = ogMargin;
+            document.body.style.padding = ogPadding;
+        }
     }, []);
 
     return(

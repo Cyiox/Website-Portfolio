@@ -1,7 +1,7 @@
 .carousel-container {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 .carousel-image {
     position: absolute;
