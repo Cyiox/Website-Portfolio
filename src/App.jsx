@@ -19,7 +19,7 @@ function AppContent(){
                     <Route path='/Coding' element = {<Coding />} />
                     <Route path= '/Contact' element = {<Contact />} />
                     <Route path= '/Wedgina' element = {<Wedgina />} />
-                    <Route path = '/CardRoulete' element = {<CardRoulete/>}/>
+                    <Route path = '/CardRoulete' element = {<CardRoulette/>}/>
                 </Routes>
         </>
     );
