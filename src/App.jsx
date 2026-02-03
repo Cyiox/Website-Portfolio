@@ -1,6 +1,6 @@
 
 import {BrowserRouter, Routes, Route, useLocation} from 'react-router-dom'
-import {Home, Photography, Coding, Contact,Wedgina, CardRoulete} from './pages'
+import {Home, Photography, Coding, Contact,Wedgina, CardRoulette} from './pages'
 import NavBar from './Navbar';
 
 function AppContent(){

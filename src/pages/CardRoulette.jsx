@@ -27,7 +27,7 @@ const CardGame = () => {
     useEffect(() => {
         // 1. Establish the connection to your C# Server
         const newConnection = new signalR.HubConnectionBuilder()
-            .withUrl("https://api.cyiox.com/GameHub", {
+            .withUrl("http://localhost:5055/GameHub", {
                 // Skip the talk and go straight to the pipe (Immedietly uses websockets, Will not fallback to other transport methods, can be fixed later)
                 skipNegotiation: true,
                 transport: signalR.HttpTransportType.WebSockets
