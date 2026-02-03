@@ -1,6 +1,6 @@
 
 import {BrowserRouter, Routes, Route, useLocation} from 'react-router-dom'
-import {Home, Photography, Coding, Contact,Wedgina, CardRoulette} from './pages'
+import {Home, Photography, Coding, Contact,Wedgina, CardRoulette, Question} from './pages'
 import NavBar from './Navbar';
 
 function AppContent(){
@@ -20,6 +20,7 @@ function AppContent(){
                     <Route path= '/Contact' element = {<Contact />} />
                     <Route path= '/Wedgina' element = {<Wedgina />} />
                     <Route path = '/CardRoulette' element = {<CardRoulette/>}/>
+                    <Route path = './Question' element = {<Question/>}/>
                 </Routes>
         </>
     );

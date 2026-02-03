@@ -10,10 +10,11 @@ function NavBar(){
 
     return(
         <nav>
-            <Link to={"/"} className="nametext">Jameer Gomez-Santos</Link>
+            <Link to={"/"} className="nametext">Cyioxia</Link>
             <div className="menu" onClick={() => {
                 setMenuOpen(!menuOpen)
             }}> 
+            {/* These spans are here in order to create space, having the Title name on the left and menus on the right. Can be seen with bigger screens that do not have the hamburger menu. */}
             <span></span>
             <span></span>
             <span></span>
