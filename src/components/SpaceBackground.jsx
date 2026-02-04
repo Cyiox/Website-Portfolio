@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from 'react';
 const shipInfoUrl = '/tiny-spaceships/Info.json';
 
 // Generate ship image paths - in production, assets in public/ are served from root
-const shipIds = [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]; // Skip ship 2
+const shipIds = [1, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20]; // Skip ship 2 & 11, as they have complicated sprite sheets
 
 const SpaceBackground = () => {
     const canvasRef = useRef(null);
@@ -23,8 +23,43 @@ const SpaceBackground = () => {
         let ships = [];
         let shipInfo = null;
         let loadedShipAssets = []; // Array of { img, info }
+        let moonFrames = []; // Moon animation frames
+        let moonFrameIndex = 0;
+        let moonFrameTimer = 0;
+        let terranImg = null; // Static planet
         let width = 0;
         let height = 0;
+
+        // Load moon animation frames
+        const loadMoonFrames = () => {
+            const totalMoonFrames = 60;
+            let loadedCount = 0;
+            
+            for (let i = 1; i <= totalMoonFrames; i++) {
+                const img = new Image();
+                img.src = `/Moon/${i}.png`;
+                img.onload = () => {
+                    moonFrames[i - 1] = img;
+                    loadedCount++;
+                };
+                img.onerror = () => {
+                    console.error(`Failed to load moon frame ${i}`);
+                    loadedCount++;
+                };
+            }
+        };
+
+        // Load Terran planet
+        const loadTerran = () => {
+            const img = new Image();
+            img.src = '/Planets/Terran.png';
+            img.onload = () => {
+                terranImg = img;
+            };
+            img.onerror = () => {
+                console.error('Failed to load Terran planet');
+            };
+        };
 
         // Load ship metadata
         const loadShipInfo = async () => {
@@ -132,7 +167,7 @@ const SpaceBackground = () => {
                 stateIndex: stateIndex,
                 frameIndex: Math.floor(Math.random() * totalFrames),
                 frameTimer: 0,
-                frameDelay: 8, // Speed of animation
+                frameDelay: 12, // Speed of animation (slowed down)
                 totalFrames: totalFrames,
                 frameW: frameW,
                 frameH: frameH,
@@ -158,7 +193,7 @@ const SpaceBackground = () => {
             if (!ctx) return;
 
             // Clear canvas
-            ctx.fillStyle = '#4C1A57'; // Use your deep purple palette color as base
+            ctx.fillStyle = '#181718'; // Base background color
             ctx.fillRect(0, 0, width, height);
 
             // Draw Stars
@@ -181,6 +216,52 @@ const SpaceBackground = () => {
                 ctx.fillStyle = `rgba(255, 255, 255, ${star.opacity})`;
                 ctx.fillRect(Math.floor(star.x), Math.floor(star.y), star.size, star.size);
             });
+
+            // Draw Terran planet (bottom left, moved diagonally toward top right)
+            if (terranImg) {
+                ctx.save();
+                ctx.imageSmoothingEnabled = false;
+                const planetScale = 3; // Scale up for visibility
+                const planetSize = terranImg.width * planetScale;
+                const planetX = planetSize * 0.8; // Position more from left
+                const planetY = height - planetSize * 0.8; // Position more from bottom
+                
+                ctx.drawImage(
+                    terranImg,
+                    planetX - planetSize / 2,
+                    planetY - planetSize / 2,
+                    planetSize,
+                    planetSize
+                );
+                ctx.restore();
+            }
+
+            // Draw animated moon (top right)
+            if (moonFrames.length > 0 && moonFrames[moonFrameIndex]) {
+                ctx.save();
+                ctx.imageSmoothingEnabled = false;
+                
+                // Animate moon frames
+                moonFrameTimer++;
+                if (moonFrameTimer >= 15) { // Change frame every 15 ticks (slowed down)
+                    moonFrameIndex = (moonFrameIndex + 1) % moonFrames.length;
+                    moonFrameTimer = 0;
+                }
+                
+                const moonScale = 3; // Scale up for visibility
+                const moonSize = moonFrames[moonFrameIndex].width * moonScale;
+                const moonX = width - moonSize * 1; // Position more from right
+                const moonY = moonSize * 1; // Position more from top
+                
+                ctx.drawImage(
+                    moonFrames[moonFrameIndex],
+                    moonX - moonSize / 2,
+                    moonY - moonSize / 2,
+                    moonSize,
+                    moonSize
+                );
+                ctx.restore();
+            }
 
             // Draw Ships
             ships.forEach(ship => {
@@ -238,6 +319,8 @@ const SpaceBackground = () => {
         // Initialize
         updateDimensions();
         loadShipInfo(); // Load ship data and then preload images
+        loadMoonFrames();
+        loadTerran();
         render();
 
         window.addEventListener('resize', updateDimensions);

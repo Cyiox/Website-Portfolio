@@ -19,9 +19,9 @@ function Home() {
             <SpaceBackground />
             <h1 className="home-titletext">Hi! I'm Jameer </h1>
             <p className="home-biography">
-                I'm an upcoming software developer with interest in applications that can study and reduce the effects of climate change,
+                I'm a software developer with a partiuclar interest in low level computing and embedded systems.
                 <br />
-                robotics, and game development.
+                However, I enjoy every aspect of software devlopment from game devlopment to data anaylsis!
                 <br />
                 I also enjoy viewing the world from the perspective of a camera in my free time!
             </p>
@@ -29,15 +29,15 @@ function Home() {
                 <a href="https://www.linkedin.com/in/jameer-gomez-santos-9159a1258/" 
                 target="_blank" 
                 rel="noopener noreferrer">
-                <button className="home-buttons" onClick={handleButtonClick1}>Linkedin ⤴  </button>
+                <button className="home-buttons" onClick={handleButtonClick1}>Linkedin</button>
                 </a>    
                 <a href="mailto:jameergomezsantos@gmail.com">
-                <button className="home-buttons" >Contact ✉️</button>
+                <button className="home-buttons" >Contact</button>
                 </a>
-                <button className="home-buttons" onClick={() => Navigate("/Photography")}>Photography 📷</button>
+                <button className="home-buttons" onClick={() => Navigate("/Photography")}>Photography</button>
             </div>
             <h2 className="home-titletext">About me</h2>
-            <p className="home-subtext">Currently, I am a junior at Brandeis University studying computer science and am located in Cambridge, MA. My interestest in learning how
+            <p className="home-subtext">Currently, I am a Senior at Brandeis University studying computer science and am located in Cambridge, MA. My interestest in learning how
                 <br />to program started when I was a kid playing Roblox, i was facinated by each game I played and would go on to try to make serveral of my own.
                 <br />
                 <br />Nowadays I have used technologies such as:
@@ -50,6 +50,7 @@ function Home() {
                 <li>HTML and CSS</li>
                 <li>Lua</li>
                 <li>C++</li>
+                <li>SQL</li>
             </ul>
             <p className="home-subtext">In order to create all sorts of cool and different <NavLink to={"/Coding"}>projects!</NavLink></p>
             <div className="image">

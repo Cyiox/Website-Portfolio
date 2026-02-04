@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import PictureCarousel from "../componets/PictureCarousel.jsx";
+import PictureCarousel from "../components/PictureCarousel.jsx";
 
 const images = [
     '/Photos/OldSanJuanBuildings.png',

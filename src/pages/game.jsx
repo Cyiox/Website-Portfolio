@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect }from "react";
 import Phaser from "phaser";
-import GameComponent from "/src/componets/gameComponet.jsx";
+import GameComponent from "/src/components/gameComponet.jsx";
 
 const Home = () => {
   const [message, setMessage] = useState(null); // ✅ React state to control the popup
