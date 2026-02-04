@@ -1,30 +1,10 @@
 import React, { useEffect, useRef } from 'react';
-import shipInfoData from '../assets/tiny-spaceships/Info.json';
 
-// Dynamically import all spaceship images from the assets folder using Vite's import.meta.glob
-const shipModules = import.meta.glob('../assets/tiny-spaceships/*.png', { eager: true });
+// Load ship info from public folder for production compatibility
+const shipInfoUrl = '/tiny-spaceships/Info.json';
 
-// Process the data to link images with metadata
-const availableShips = [];
-
-Object.keys(shipModules).forEach((path) => {
-    // Extract ID from filename (e.g., tinyShip12.png -> 12)
-    const match = path.match(/tinyShip(\d+)\.png/);
-    if (match) {
-        const id = parseInt(match[1], 10);
-        
-        // Skip ships with problematic layouts
-        if (id === 2) return; // tinyShip2 has irregular sprite sheet layout
-        
-        const info = shipInfoData.ships.find(s => s.id === id);
-        if (info) {
-            availableShips.push({
-                imgSrc: shipModules[path].default,
-                info: info
-            });
-        }
-    }
-});
+// Generate ship image paths - in production, assets in public/ are served from root
+const shipIds = [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]; // Skip ship 2
 
 const SpaceBackground = () => {
     const canvasRef = useRef(null);
@@ -41,31 +21,56 @@ const SpaceBackground = () => {
         // State
         let stars = [];
         let ships = [];
+        let shipInfo = null;
         let loadedShipAssets = []; // Array of { img, info }
         let width = 0;
         let height = 0;
 
+        // Load ship metadata
+        const loadShipInfo = async () => {
+            try {
+                const response = await fetch(shipInfoUrl);
+                shipInfo = await response.json();
+                preloadImages();
+            } catch (error) {
+                console.error('Failed to load ship info:', error);
+            }
+        };
+
         // Preload images
         const preloadImages = () => {
+            if (!shipInfo) return;
+            
             let loadedCount = 0;
-            availableShips.forEach((item) => {
+            const totalToLoad = shipIds.length;
+            
+            shipIds.forEach((id) => {
+                const info = shipInfo.ships.find(s => s.id === id);
+                if (!info) return;
+                
                 const img = new Image();
-                img.src = item.imgSrc;
+                img.src = `/tiny-spaceships/tinyShip${id}.png`;
+                
                 img.onload = () => {
                     loadedShipAssets.push({
                         img: img,
-                        info: item.info
+                        info: info
                     });
                     loadedCount++;
                     
-                    // Start when at least some are loaded or all are done
-                    if (loadedCount === availableShips.length) {
+                    if (loadedCount === totalToLoad) {
+                        initShips();
+                    }
+                };
+                
+                img.onerror = () => {
+                    console.error(`Failed to load ship ${id}`);
+                    loadedCount++;
+                    if (loadedCount === totalToLoad) {
                         initShips();
                     }
                 };
             });
-            // Fallback if no images found
-            if (availableShips.length === 0) initShips();
         };
 
         const initShips = () => {
@@ -108,11 +113,7 @@ const SpaceBackground = () => {
             // Padding X is 1. Padding Y is 0 based on file analysis, but we focus on X info provided.
             const paddingX = 1;
             
-            const totalFrames = Math.floor(asset.img.width / (frameW + paddingX));;
-            
-            if (frameOverrides[asset.info.id]) {
-                totalFrames = frameOverrides[asset.info.id];
-            }
+            const totalFrames = Math.floor(asset.img.width / (frameW + paddingX));
 
             // Random movement
             const angle = Math.random() * Math.PI * 2;
@@ -236,7 +237,7 @@ const SpaceBackground = () => {
 
         // Initialize
         updateDimensions();
-        preloadImages();
+        loadShipInfo(); // Load ship data and then preload images
         render();
 
         window.addEventListener('resize', updateDimensions);
