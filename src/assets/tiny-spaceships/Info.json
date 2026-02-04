@@ -1,0 +1,35 @@
+{
+  "packName": "Tiny Ships",
+  "author": "Disruptor Art",
+  "contact": {
+    "discord": "disruptorart",
+    "email": "sgchr@yahoo.com"
+  },
+  "globalSettings": {
+    "paddingX": 1,
+    "paddingY": 1,
+    "license": "Free to use, resell prohibited"
+  },
+  "ships": [
+    { "id": 1, "name": "tinyShip1", "frameSize": { "w": 24, "h": 27 }, "states": ["idle", "attack", "move"] },
+    { "id": 2, "name": "tinyShip2", "frameSize": { "w": 34, "h": 36 }, "states": ["attack", "idle", "move"], "notes": "Melee attack (spikes)" },
+    { "id": 3, "name": "tinyShip3", "frameSize": { "w": 26, "h": 27 }, "states": ["move", "idle"], "notes": "Police cruiser" },
+    { "id": 4, "name": "tinyShip4", "frameSize": { "w": 28, "h": 23 }, "states": ["idle", "attack", "move"] },
+    { "id": 5, "name": "tinyShip5", "frameSize": { "w": 34, "h": 38 }, "states": ["move", "idle"] },
+    { "id": 6, "name": "tinyShip6", "frameSize": { "w": 40, "h": 22 }, "states": ["idle"] },
+    { "id": 7, "name": "tinyShip7", "frameSize": { "w": 46, "h": 36 }, "states": ["move", "attack", "idle"] },
+    { "id": 8, "name": "tinyShip8", "frameSize": { "w": 32, "h": 30 }, "states": ["idle"] },
+    { "id": 9, "name": "tinyShip9", "frameSize": { "w": 34, "h": 31 }, "states": ["idle", "attack"] },
+    { "id": 10, "name": "tinyShip10", "frameSize": { "w": 40, "h": 29 }, "states": ["idle"] },
+    { "id": 11, "name": "tinyShip11", "frameSize": { "w": 36, "h": 28 }, "states": ["idle", "move"] },
+    { "id": 12, "name": "tinyShip12", "frameSize": { "w": 26, "h": 27 }, "states": ["move", "attack", "idle"] },
+    { "id": 13, "name": "tinyShip13", "frameSize": { "w": 36, "h": 41 }, "states": ["move", "idle"] },
+    { "id": 14, "name": "tinyShip14", "frameSize": { "w": 52, "h": 32 }, "states": ["attack", "idle"] },
+    { "id": 15, "name": "tinyShip15", "frameSize": { "w": 38, "h": 26 }, "states": ["idle", "attack"] },
+    { "id": 16, "name": "tinyShip16", "frameSize": { "w": 28, "h": 28 }, "states": ["attack", "move", "idle"] },
+    { "id": 17, "name": "tinyShip17", "frameSize": { "w": 34, "h": 25 }, "states": ["idle", "attack"] },
+    { "id": 18, "name": "tinyShip18", "frameSize": { "w": 32, "h": 30 }, "states": ["attack", "idle"] },
+    { "id": 19, "name": "tinyShip19", "frameSize": { "w": 42, "h": 28 }, "states": ["attack", "idle"] },
+    { "id": 20, "name": "tinyShip20", "frameSize": { "w": 44, "h": 44 }, "states": ["move", "idle", "attack"] }
+  ]
+}

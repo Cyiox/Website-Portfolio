@@ -15,14 +15,14 @@ html, body {
 }
 
 .active{
-    background-color: #32101e ;
+    background-color: #007c77 ;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #5b233a;
+    background-color: #007c77;
     margin: 0;
     padding: 0;
     position: sticky;
@@ -56,7 +56,7 @@ nav ul li a{
     border-radius: 0.5rem;
 }
 nav ul li a:not(.active):hover {
-    background-color: #401427;
+    background-color: #ff3cc7;
 }
 
 nav .menu {
@@ -111,18 +111,14 @@ nav .menu span {
 .home-container {
     margin: 0;
     padding: 0;
-    background-image: url('/cool-background.svg');
-    background-size:cover;
-    background-color: #8577b2;
-    background-repeat: no-repeat;
-    background-position:top;
+    background-color: transparent; /* Allow canvas background to show */
     min-height: 100vh;
 
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: rgb(0, 0, 0); /* Adjust text color for readability */
+    color: #ffffff; /* Adjust text color for readability */
 }
 .home-titletext {
     opacity: 0;
@@ -132,14 +128,14 @@ nav .menu span {
     padding-top: 15rem;
     text-align: center; /* Adjust alignment as needed */
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: #f0f600;
 }
 .home-biography {
     font-size: 1.5rem;
     opacity: 0;
     animation: fade-in 1.5s ease-in-out 1.5s forwards;
     text-align: center;
-    color: aquamarine;
+    color: #00e5e8;
 }
 .home-hi-fade-in{
     animation: fade-in 1.5s ease-in-out 1.5s forwards;
@@ -157,13 +153,13 @@ nav .menu span {
     font-size: 1.5rem;
     padding: 0.5rem;
     color: #ffff;
-    background-color: #5b233a;
+    background-color: #ff3cc7;
     cursor: pointer;
     border-radius: .5rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .home-buttons:hover {
-    background-color: #401427;
+    background-color: #007c77;
 }
 .home-subtext {
     text-align: center;
@@ -187,7 +183,7 @@ nav .menu span {
 
 .home-techstack li {
     padding: 0.5rem 1rem; /* Add spacing inside each item */
-    background-color: #5b233a; /* Optional: Set a background color for items */
+    background-color: #007c77; /* Optional: Set a background color for items */
     border-radius: 0.5rem; /* Optional: Add rounded corners */
     flex: 0 1 auto; /* Allow items to grow/shrink naturally */
     text-align: center; /* Center text inside list items */
@@ -205,17 +201,16 @@ nav .menu span {
 
 @media (max-width: 720px) {
     .home-biography{
-        color: rgb(128, 255, 223);
+        color: #00e5e8;
     }
     .home-buttons {
         font-size: 1rem;
         padding: 1rem;
     }
     .home-container {
-        background-size: contain;
-        background-position: center;
-        background: rgb(133,119,178);
-        background: linear-gradient(347deg, rgba(133,119,178,1) 15%, rgba(133,119,178,1) 32%, rgba(116,136,185,1) 59%, rgba(45,208,215,1) 87%, rgba(1,252,234,1) 100%);;    }
+        /* Mobile adjustment - maybe keep transparent or add slight gradient overlay if needed */
+        background: transparent;
+    }
     .home-titletext {
         padding-top: 5rem;
         font-size: 1.5rem;
@@ -252,7 +247,7 @@ nav .menu span {
   /* Apply the animation to the paragraph */
   .bounce-text {
     text-align: center;
-    color: aquamarine;
+    color: #00e5e8;
   }
   
 
@@ -278,7 +273,7 @@ nav .menu span {
 .tab {
     padding: 0.5rem 1rem;
     border: none;
-    background-color: #5b233a;
+    background-color: #007c77;
     color: white;
     cursor: pointer;
     border-radius: 0.5rem;
@@ -286,12 +281,12 @@ nav .menu span {
 }
 
 .tab:hover {
-    background-color: #401427;
+    background-color: #ff3cc7;
 }
 
 .tab.active {
-    background-color: #ffff;
-    color: black;
+    background-color: #f0f600;
+    color: #4C1A57;
     font-weight: bold;
 }
 
@@ -303,7 +298,7 @@ nav .menu span {
     border-radius: 0.5rem;
     font-size: 1rem;
     color: white;
-    background-color: #9977b2;
+    background-color: #4C1A57;
     text-align: center;
 }
 .tab-content ul{
@@ -323,7 +318,7 @@ nav .menu span {
     padding: 0;
     background-image: url('/cool-background.svg');
     background-size:cover;
-    background-color: #8577b2;
+    background-color: #4C1A57;
     background-repeat: no-repeat;
     background-position:top;
     min-height: 100vh;
@@ -336,10 +331,10 @@ nav .menu span {
     padding-top: 4rem;
     text-align: center; /* Adjust alignment as needed */
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: #f0f600;
 }
 .gameContainer {
-    background-color: #9977b2;
+    background-color: #4C1A57;
     width: 100vw;  /* Full width */
     height: 100vh; /* Full height */
     flex-direction: column;
@@ -347,7 +342,7 @@ nav .menu span {
     justify-content: center;
 }
 .gameTitle{
-    color: #32101e;
+    color: #f0f600;
     display: flex;
     align-items: center;
     justify-content: center;

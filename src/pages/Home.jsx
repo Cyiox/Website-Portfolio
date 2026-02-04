@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Navigate, NavLink, useNavigate } from "react-router-dom";
 import Footer from "../Footer";
 import TabMenu from "../TabMenu";
+import SpaceBackground from "../components/SpaceBackground";
+
 function Home() {
     useEffect(() => {
         document.title = "Jameer's Website";
@@ -14,7 +16,7 @@ function Home() {
 
     return (
         <div className="home-container">
-        
+            <SpaceBackground />
             <h1 className="home-titletext">Hi! I'm Jameer </h1>
             <p className="home-biography">
                 I'm an upcoming software developer with interest in applications that can study and reduce the effects of climate change,
