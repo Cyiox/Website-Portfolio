@@ -1,27 +1,29 @@
 
-import {BrowserRouter, Routes, Route, useLocation} from 'react-router-dom'
-import {Home, Photography, Coding, Contact,Wedgina, CardRoulette, Question} from './pages'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { Home, Photography, Coding, Contact, Wedgina, CardRoulette, Question, Engr32 } from './pages'
 import NavBar from './Navbar';
 
-function AppContent(){
+// This file contains the rounting functionalty for the webstie. 
+function AppContent() {
 
     const currentPath = useLocation();
     // Returns true if the user is currently on photography page
     const hideNavBar = currentPath.pathname === '/Photography'
-    return(
+    return (
         <>
             {/* The line below is a if statement. It says hideNavBar is false, return NavBar, else return null */}
             {!hideNavBar ? <NavBar /> : null}
-                <Routes>
-                    <Route index element = {<Home />} />
-                    <Route path='/Home' element = {<Home />} />
-                    <Route path= '/Photography' element = {<Photography />} />
-                    <Route path='/Coding' element = {<Coding />} />
-                    <Route path= '/Contact' element = {<Contact />} />
-                    <Route path= '/Wedgina' element = {<Wedgina />} />
-                    <Route path = '/CardRoulette' element = {<CardRoulette/>}/>
-                    <Route path = './Question' element = {<Question/>}/>
-                </Routes>
+            <Routes>
+                <Route index element={<Home />} />
+                <Route path='/Home' element={<Home />} />
+                <Route path='/Photography' element={<Photography />} />
+                <Route path='/Coding' element={<Coding />} />
+                <Route path='/Contact' element={<Contact />} />
+                <Route path='/Wedgina' element={<Wedgina />} />
+                <Route path='/CardRoulette' element={<CardRoulette />} />
+                <Route path='/Question' element={<Question />} />
+                <Route path='/Engr32' element={<Engr32 />} />
+            </Routes>
         </>
     );
 }
@@ -32,7 +34,7 @@ function AppContent(){
 function App() {
     return (
         <BrowserRouter>
-            <AppContent/>
+            <AppContent />
         </BrowserRouter>
     );
 }

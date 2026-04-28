@@ -1,0 +1,117 @@
+<svg height="600" width="700" xmlns="http://www.w3.org/2000/svg">
+<title>Your Diagram Title</title>
+<!-- Generated with SankeyMATIC: 4/27/2026, 1:05:49 PM -->
+<g transform="translate(114.91332,18)">
+<g id="sankey_flows">
+<path id="flow0" d="M11 76.80407C57.98417 76.80407 57.98417 54.4882 104.96833 54.4882" fill="none" stroke-width="106.89944" stroke="#1f77b4" opacity="0.45"><title>Petroleum → Oil-Fired Plants: 10,700,000</title></path>
+<path id="flow5" d="M115.96833 54.4882C169.9525 54.4882 169.9525 119.02159 223.93667 119.02159" fill="none" stroke-width="106.89944" stroke="#ff7f0e" opacity="0.45"><title>Oil-Fired Plants → Puerto Rico Grid: 10,700,000</title></path>
+<path id="flow10" d="M234.93667 109.03099C303.32993 109.03099 303.32993 68.35189 371.72319 68.35189" fill="none" stroke-width="86.91823" stroke="#17becf" opacity="0.45"><title>Puerto Rico Grid → Commercial Sector: 8,700,000</title></path>
+<path id="flow11" d="M234.93667 192.45251C299.41143 192.45251 299.41143 207.56334 363.8862 207.56334" fill="none" stroke-width="79.92481" stroke="#1f77b4" opacity="0.45"><title>Puerto Rico Grid → Residential Sector: 8,000,000</title></path>
+<path id="flow1" d="M11 197.31571C58.81097 197.31571 58.81097 181.37791 106.62194 181.37791" fill="none" stroke-width="30.97086" stroke="#2ca02c" opacity="0.45"><title>Natural Gas → Costa Sur: 3,100,000</title></path>
+<path id="flow6" d="M117.62194 181.37791C170.7793 181.37791 170.7793 187.95674 223.93667 187.95674" fill="none" stroke-width="30.97086" stroke="#d62728" opacity="0.45"><title>Costa Sur → Puerto Rico Grid: 3,100,000</title></path>
+<path id="flow13" d="M374.8862 233.53891C397.37976 233.53891 397.37976 225.09813 419.87333 225.09813" fill="none" stroke-width="27.97368" stroke="#2ca02c" opacity="0.45"><title>Residential Sector → Caguas Residents: 2,800,000</title></path>
+<path id="flow2" d="M11 225.78892C54.98417 225.78892 54.98417 254.94413 98.96833 254.94413" fill="none" stroke-width="25.97556" stroke="#2ca02c" opacity="0.45"><title>Natural Gas → EcoEléctrica: 2,600,000</title></path>
+<path id="flow7" d="M109.96833 254.94413C166.9525 254.94413 166.9525 216.42995 223.93667 216.42995" fill="none" stroke-width="25.97556" stroke="#9467bd" opacity="0.45"><title>EcoEléctrica → Puerto Rico Grid: 2,600,000</title></path>
+<path id="flow14" d="M382.72319 89.83168v21.97932L419.87333 112.5875v-21.97932z" fill="#2ca02c" stroke-width="0.5" stroke="#2ca02c" opacity="0.45"><title>Commercial Sector → Caguas Businesses: 2,200,000</title></path>
+<path id="flow12" d="M234.93667 242.00589C301.28839 242.00589 301.28839 305.87368 367.64011 305.87368" fill="none" stroke-width="19.18195" stroke="#ff7f0e" opacity="0.45"><title>Puerto Rico Grid → Industrial Sector: 1,920,000</title></path>
+<path id="flow3" d="M11 319.60796C53.74906 319.60796 53.74906 322.58116 96.49811 322.58116" fill="none" stroke-width="18.48261" stroke="#8c564b" opacity="0.45"><title>Coal → AES Coal Plant: 1,850,000</title></path>
+<path id="flow8" d="M107.49811 322.58116C165.71739 322.58116 165.71739 238.65904 223.93667 238.65904" fill="none" stroke-width="18.48261" stroke="#e377c2" opacity="0.45"><title>AES Coal Plant → Puerto Rico Grid: 1,850,000</title></path>
+<path id="flow4" d="M28.63323 391.53064C67.29059 391.53064 67.29059 400.51883 105.94796 400.51883" fill="none" stroke-width="3.69652" stroke="#7f7f7f" opacity="0.45"><title>Renewables → Renewables Node: 370,000</title></path>
+<path id="flow9" d="M116.94796 400.51883C170.44231 400.51883 170.44231 249.74861 223.93667 249.74861" fill="none" stroke-width="3.69652" stroke="#7f7f7f" opacity="0.45"><title>Renewables Node → Puerto Rico Grid: 370,000</title></path>
+</g>
+<g id="sankey_nodes">
+<g class="node">
+<rect id="r0" class="for_r0" x="0" y="0.84139" height="106.89944" width="11" fill="#1f77b4" fill-opacity="1" transform="translate(0,22.51296)"><title>Petroleum:
+10,700,000</title></rect>
+</g>
+<g class="node">
+<rect id="r1" class="for_r1" x="104.96833" y="1.03848" height="106.89944" width="11" fill="#ff7f0e" fill-opacity="1"><title>Oil-Fired Plants:
+10,700,000</title></rect>
+</g>
+<g class="node">
+<rect id="r2" class="for_r2" x="0" y="243.92458" height="56.94643" width="11" fill="#2ca02c" fill-opacity="1" transform="translate(0,-62.09431)"><title>Natural Gas:
+5,700,000</title></rect>
+</g>
+<g class="node">
+<rect id="r3" class="for_r3" x="104.96833" y="201.4617" height="30.97086" width="11" fill="#d62728" fill-opacity="1" transform="translate(1.65361,-35.56922)"><title>Costa Sur:
+3,100,000</title></rect>
+</g>
+<g class="node">
+<rect id="r4" class="for_r4" x="104.96833" y="325.95635" height="25.97556" width="11" fill="#9467bd" fill-opacity="1" transform="translate(-6,-84)"><title>EcoEléctrica:
+2,600,000</title></rect>
+</g>
+<g class="node">
+<rect id="r5" class="for_r5" x="0" y="445.45569" height="18.48261" width="11" fill="#8c564b" fill-opacity="1" transform="translate(0,-135.08904)"><title>Coal:
+1,850,000</title></rect>
+</g>
+<g class="node">
+<rect id="r6" class="for_r6" x="104.96833" y="445.45569" height="18.48261" width="11" fill="#e377c2" fill-opacity="1" transform="translate(-8.47022,-132.11583)"><title>AES Coal Plant:
+1,850,000</title></rect>
+</g>
+<g class="node">
+<rect id="r7" class="for_r7" x="0" y="557.46209" height="3.69652" width="11" fill="#7f7f7f" fill-opacity="1" transform="translate(17.63323,-167.77971)"><title>Renewables:
+370,000</title></rect>
+</g>
+<g class="node">
+<rect id="r8" class="for_r8" x="104.96833" y="557.46209" height="3.69652" width="11" fill="#7f7f7f" fill-opacity="1" transform="translate(0.97962,-158.79151)"><title>Renewables Node:
+370,000</title></rect>
+</g>
+<g class="node">
+<rect id="r9" class="for_r9" x="209.93667" y="81.57187" height="186.025" width="11" fill="#bcbd22" fill-opacity="1" transform="translate(14,-16)"><title>Puerto Rico Grid:
+18,620,000</title></rect>
+</g>
+<g class="node">
+<rect id="r10" class="for_r10" x="314.905" y="25.85768" height="86.91823" width="11" fill="#17becf" fill-opacity="1" transform="translate(56.81819,-0.96491)"><title>Commercial Sector:
+8,700,000</title></rect>
+</g>
+<g class="node">
+<rect id="r11" class="for_r11" x="314.905" y="206.2997" height="79.92481" width="11" fill="#1f77b4" fill-opacity="1" transform="translate(48.9812,-38.69876)"><title>Residential Sector:
+8,000,000</title></rect>
+</g>
+<g class="node">
+<rect id="r12" class="for_r12" x="314.905" y="379.74829" height="19.18195" width="11" fill="#ff7f0e" fill-opacity="1" transform="translate(52.73511,-83.46559)"><title>Industrial Sector:
+1,920,000</title></rect>
+</g>
+<g class="node">
+<rect id="r13" class="for_r13" x="419.87333" y="206.11129" height="27.97368" width="11" fill="#2ca02c" fill-opacity="1" transform="translate(0,5)"><title>Caguas Residents:
+2,800,000</title></rect>
+</g>
+<g class="node">
+<rect id="r14" class="for_r14" x="419.87333" y="90.60818" height="21.97932" width="11" fill="#2ca02c" fill-opacity="1"><title>Caguas Businesses:
+2,200,000</title></rect>
+</g>
+</g>
+<g id="sankey_labels" font-family="sans-serif" font-size="16px" fill="#000000">
+<text text-anchor="middle" x="235.08668" y="577" font-size="12px" font-weight="400" fill="#336781">Made at SankeyMATIC.com</text>
+<rect id="label0_bg" class="for_r0" x="-101.91333" y="32.38111" width="100.76667" height="43.32" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(0,22.51296)"></rect>
+<text id="label0" class="for_r0" text-anchor="end" x="-7.51333" y="54.29111" font-weight="400" font-size="14.4px" dy="-4.91" transform="translate(0,22.51296)">Petroleum<tspan x="-7.51333" dy="19.32" font-weight="400" font-size="17.6px">10,700,000</tspan></text>
+<rect id="label1_bg" class="for_r1" x="54.46833" y="32.5782" width="112.00001" height="43.32" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label1" class="for_r1" text-anchor="middle" x="110.46833" y="54.4882" font-weight="400" font-size="14.4px" dy="-4.91">Oil-Fired Plants<tspan x="110.46833" dy="19.32" font-weight="400" font-size="17.6px">10,700,000</tspan></text>
+<rect id="label2_bg" class="for_r2" x="-92.13" y="250.48779" width="90.98333" height="43.32001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(0,-62.09431)"></rect>
+<text id="label2" class="for_r2" text-anchor="end" x="-7.51333" y="272.39779" font-weight="400" font-size="14.4px" dy="-4.91" transform="translate(0,-62.09431)">Natural Gas<tspan x="-7.51333" dy="19.32" font-weight="400" font-size="17.6px">5,700,000</tspan></text>
+<rect id="label3_bg" class="for_r3" x="64.97666" y="195.03712" width="90.98333" height="43.32001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(1.65361,-35.56922)"></rect>
+<text id="label3" class="for_r3" text-anchor="middle" x="110.46833" y="216.94713" font-weight="400" font-size="14.4px" dy="-4.91" transform="translate(1.65361,-35.56922)">Costa Sur<tspan x="110.46833" dy="19.32" font-weight="400" font-size="17.6px">3,100,000</tspan></text>
+<rect id="label4_bg" class="for_r4" x="64.07666" y="317.03412" width="92.78334" height="43.32001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(-6,-84)"></rect>
+<text id="label4" class="for_r4" text-anchor="middle" x="110.46833" y="338.94413" font-weight="400" font-size="14.4px" dy="-4.91" transform="translate(-6,-84)">EcoEléctrica<tspan x="110.46833" dy="19.32" font-weight="400" font-size="17.6px">2,600,000</tspan></text>
+<rect id="label5_bg" class="for_r5" x="-92.13" y="432.78699" width="90.98333" height="43.32001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(0,-135.08904)"></rect>
+<text id="label5" class="for_r5" text-anchor="end" x="-7.51333" y="454.697" font-weight="400" font-size="14.4px" dy="-4.91" transform="translate(0,-135.08904)">Coal<tspan x="-7.51333" dy="19.32" font-weight="400" font-size="17.6px">1,850,000</tspan></text>
+<rect id="label6_bg" class="for_r6" x="54.46833" y="432.78699" width="112.00001" height="43.32001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(-8.47022,-132.11583)"></rect>
+<text id="label6" class="for_r6" text-anchor="middle" x="110.46833" y="454.697" font-weight="400" font-size="14.4px" dy="-4.91" transform="translate(-8.47022,-132.11583)">AES Coal Plant<tspan x="110.46833" dy="19.32" font-weight="400" font-size="17.6px">1,850,000</tspan></text>
+<rect id="label7_bg" class="for_r7" x="-93.18" y="537.40039" width="92.03334" height="43.31995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(17.63323,-167.77971)"></rect>
+<text id="label7" class="for_r7" text-anchor="end" x="-7.51333" y="559.31035" font-weight="400" font-size="14.4px" dy="-4.91" transform="translate(17.63323,-167.77971)">Renewables<tspan x="-7.51333" dy="19.32" font-weight="400" font-size="17.6px">370,000</tspan></text>
+<rect id="label8_bg" class="for_r8" x="45.22666" y="537.40039" width="130.48333" height="43.31995" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(0.97962,-158.79151)"></rect>
+<text id="label8" class="for_r8" text-anchor="middle" x="110.46833" y="559.31035" font-weight="400" font-size="14.4px" dy="-4.91" transform="translate(0.97962,-158.79151)">Renewables Node<tspan x="110.46833" dy="19.32" font-weight="400" font-size="17.6px">370,000</tspan></text>
+<rect id="label9_bg" class="for_r9" x="155.82834" y="152.67436" width="119.21667" height="43.32001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(14,-16)"></rect>
+<text id="label9" class="for_r9" text-anchor="middle" x="215.43667" y="174.58437" font-weight="400" font-size="14.4px" dy="-4.91" transform="translate(14,-16)">Puerto Rico Grid<tspan x="215.43667" dy="19.32" font-weight="400" font-size="17.6px">18,620,000</tspan></text>
+<rect id="label10_bg" class="for_r10" x="252.79666" y="47.4068" width="135.21667" height="43.32" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(56.81819,-0.96491)"></rect>
+<text id="label10" class="for_r10" text-anchor="middle" x="320.405" y="69.3168" font-weight="400" font-size="14.4px" dy="-4.91" transform="translate(56.81819,-0.96491)">Commercial Sector<tspan x="320.405" dy="19.32" font-weight="400" font-size="17.6px">8,700,000</tspan></text>
+<rect id="label11_bg" class="for_r11" x="255.57999" y="224.3521" width="129.64999" height="43.32002" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(48.9812,-38.69876)"></rect>
+<text id="label11" class="for_r11" text-anchor="middle" x="320.405" y="246.2621" font-weight="400" font-size="14.4px" dy="-4.91" transform="translate(48.9812,-38.69876)">Residential Sector<tspan x="320.405" dy="19.32" font-weight="400" font-size="17.6px">8,000,000</tspan></text>
+<rect id="label12_bg" class="for_r12" x="327.05167" y="367.42926" width="116.83334" height="43.32001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(52.73511,-83.46559)"></rect>
+<text id="label12" class="for_r12" text-anchor="start" x="333.41833" y="389.33927" font-weight="400" font-size="14.4px" dy="-4.91" transform="translate(52.73511,-83.46559)">Industrial Sector<tspan x="333.41833" dy="19.32" font-weight="400" font-size="17.6px">1,920,000</tspan></text>
+<rect id="label13_bg" class="for_r13" x="432.01999" y="198.18813" width="130.46667" height="43.32001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0" transform="translate(0,5)"></rect>
+<text id="label13" class="for_r13" text-anchor="start" x="438.38667" y="220.09813" font-weight="400" font-size="14.4px" dy="-4.91" transform="translate(0,5)">Caguas Residents<tspan x="438.38667" dy="19.32" font-weight="400" font-size="17.6px">2,800,000</tspan></text>
+<rect id="label14_bg" class="for_r14" x="432.01999" y="79.68784" width="140.06665" height="43.32001" rx="4" fill="#fff" fill-opacity="0.75" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label14" class="for_r14" text-anchor="start" x="438.38667" y="101.59784" font-weight="400" font-size="14.4px" dy="-4.91">Caguas Businesses<tspan x="438.38667" dy="19.32" font-weight="400" font-size="17.6px">2,200,000</tspan></text>
+</g>
+</g></svg>

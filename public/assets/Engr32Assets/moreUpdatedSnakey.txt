@@ -1,0 +1,105 @@
+// SankeyMATIC diagram inputs - Saved: 4/27/2026, 3:30:48 PM
+// https://sankeymatic.com/build/
+
+// === Nodes and Flows ===
+
+// Sources to Plants (Values in Billion kWh)
+Petroleum [5.7] Aguirre Power Complex
+Petroleum [3.1] San Juan & Palo Seco
+Petroleum [2.0] Mayagüez & Others
+Natural Gas [3.4] Costa Sur
+Natural Gas [2.8] EcoEléctrica
+Coal [2.0] AES Coal Plant
+Renewables [1.0] Renewables Node
+
+// Plants to the Grid
+Aguirre Power Complex [5.7] Puerto Rico Grid
+San Juan & Palo Seco [3.1] Puerto Rico Grid
+Mayagüez & Others [2.0] Puerto Rico Grid
+Costa Sur [3.4] Puerto Rico Grid
+EcoEléctrica [2.8] Puerto Rico Grid
+AES Coal Plant [2.0] Puerto Rico Grid
+Renewables Node [1.0] Puerto Rico Grid
+
+// Grid to Sectors (Total 20B kWh)
+Puerto Rico Grid [9.4] Commercial Sector
+Puerto Rico Grid [8.6] Residential Sector
+Puerto Rico Grid [2.0] Industrial Sector
+
+// Caguas Focus
+Residential Sector [3.0] Caguas Residents
+Commercial Sector [2.4] Caguas Businesses
+
+// === Settings ===
+
+size w 700
+ h 600
+margin l 12
+ r 12
+ t 18
+ b 20
+bg color #ffffff
+ transparent Y
+node w 11
+ h 32.5
+ spacing 99.5
+ border 0
+ theme a
+ color #888888
+ opacity 1
+flow curvature 0.5
+ inheritfrom outside-in
+ color #999999
+ opacity 0.45
+layout order automatic
+ justifyorigins N
+ justifyends N
+ reversegraph N
+ attachincompletesto nearest
+labels color #000000
+ hide N
+ highlight 0.75
+ fontface sans-serif
+ linespacing 0.2
+ relativesize 110
+ magnify 100
+labelname appears Y
+ size 16
+ weight 400
+labelvalue appears Y
+ fullprecision Y
+ position below
+ weight 400
+labelposition autoalign 0
+ scheme auto
+ first before
+ breakpoint 6
+value format ',.'
+ prefix ''
+ suffix ''
+themeoffset a 0
+ b 2
+ c 7
+ d 3
+meta mentionsankeymatic Y
+ listimbalances Y
+
+// === Moved Nodes ===
+
+move Petroleum -0.17499, 0.05815
+move Natural Gas -0.00933, -0.097
+move Coal 0, -0.12745
+move AES Coal Plant -0.05061, -0.11778
+move Renewables 0.04433, -0.10147
+move Renewables Node 0.03733, -0.1415
+move Puerto Rico Grid 0.22933, -0.04651
+move EcoEléctrica -0.07379, -0.10992
+move San Juan & Palo Seco -0.0178, 0
+move Mayagüez & Others -0.0356, -0.04963
+move Costa Sur -0.0089, -0.09221
+move Commercial Sector 0.17965, -0.19349
+move Residential Sector 0.16332, -0.02661
+move Caguas Businesses 0.06533, -0.09824
+move Industrial Sector 0.17499, 0.01841
+move Aguirre Power Complex 0.04666, 0.03343
+move Caguas Residents 0.02333, -0.09365

@@ -1,0 +1,140 @@
+.engr32-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Make all images responsive and handle scaling */
+.engr32-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.engr32-container figure img {
+    margin: 10px auto;
+}
+
+.engr32-container figure figcaption {
+    font-style: italic;
+    color: #888;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Style the table to fit cleanly */
+.engr32-container table {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Slight contrast for dark mode */
+}
+
+.engr32-container th,
+.engr32-container td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    /* Darker border for contrast */
+}
+
+.engr32-container th {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+}
+
+/* Fix spacing for lists inside main content */
+.engr32-container ul {
+    margin: 20px 0 20px 40px;
+}
+
+.engr32-container li {
+    margin-bottom: 12px;
+}
+
+/* Embed container responsiveness */
+.engr32-container .te-embed {
+    width: 100%;
+    margin: 30px auto;
+    overflow-x: auto;
+}
+
+/* Make the Quiz component look significantly prettier */
+.engr32-container .quiz-section {
+    background: linear-gradient(135deg, rgba(82, 113, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border: 1px solid rgba(82, 113, 255, 0.3);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.engr32-container .quiz-section h3 {
+    color: #aeb4ff; /* Slight blue tint */
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.engr32-container .quiz-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.engr32-container .quiz-section .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.engr32-container .quiz-section .options button {
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+    text-align: left;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.engr32-container .quiz-section .options button:hover {
+    background: rgba(82, 113, 255, 0.2);
+    border: 1px solid rgba(82, 113, 255, 0.4);
+    transform: translateX(5px);
+}
+
+.engr32-container .quiz-section .feedback {
+    margin-top: 15px;
+    font-style: italic;
+    color: #ffd166;
+}
+
+.engr32-container .quiz-section button:not(.options button) {
+    background: #5271ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.1s;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.engr32-container .quiz-section button:not(.options button):hover {
+    background: #3e57c9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(82, 113, 255, 0.4);
+}
