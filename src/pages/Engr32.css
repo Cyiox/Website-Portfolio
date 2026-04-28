@@ -77,7 +77,8 @@
 }
 
 .engr32-container .quiz-section h3 {
-    color: #aeb4ff; /* Slight blue tint */
+    color: #aeb4ff;
+    /* Slight blue tint */
     margin-bottom: 15px;
     font-size: 1.3rem;
 }
