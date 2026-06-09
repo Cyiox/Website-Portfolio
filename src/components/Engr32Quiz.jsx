@@ -17,8 +17,9 @@ const questions = [
         question: "How many rooftop solar systems were installed in PR every month on average in 2025?",
         options: ["500", "1,200", "2,500", "3,850"],
         answer: "3,850",
-        fact: "Nearly 4,000 systems are being added to the grid every month!.",
-
+        fact: "Nearly 4,000 systems are being added to the grid every month!."
+    },
+    {
         question: "How much did you enjoy Prof's Krones class?",
         options: ["Not at all", "It was okay", "I liked it", "It was the best class I've ever taken"],
         answer: "It was the best class I've ever taken",

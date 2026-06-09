@@ -1,6 +1,6 @@
 
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
-import { Home, Photography, Coding, Contact, Wedgina, CardRoulette, Question, Engr32 } from './pages'
+import { Home, Photography, Coding, Contact, Wedgina, CardRoulette, Question, Engr32, CasaVieja, Tracker } from './pages'
 import NavBar from './Navbar';
 
 // This file contains the rounting functionalty for the webstie. 
@@ -23,6 +23,8 @@ function AppContent() {
                 <Route path='/CardRoulette' element={<CardRoulette />} />
                 <Route path='/Question' element={<Question />} />
                 <Route path='/Engr32' element={<Engr32 />} />
+                <Route path='/CasaVieja' element={<CasaVieja />} />
+                <Route path='/Tracker' element={<Tracker />} />
             </Routes>
         </>
     );
