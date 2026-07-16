@@ -29,9 +29,6 @@ function NavBar(){
                 <li>
                  <NavLink to={"/Contact"}>Contact Me</NavLink>   
                 </li>
-                <li>
-                 <NavLink to={"/Tracker"}>Diet Tracker</NavLink>   
-                </li>
             </ul>
         </nav>
     )
